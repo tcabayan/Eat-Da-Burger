@@ -14,7 +14,7 @@ const orm = {
         });
     },
     insertOne: function (tableName, obj) {
-        const query = `INSERT INTO BURGERS SET ?`;
+        const query = `INSERT INTO ?? SET ?`;
         return new Promise((resolve, reject) => {
             connection.query(query, [tableName, obj], (err, results) => {
                if (err) {
