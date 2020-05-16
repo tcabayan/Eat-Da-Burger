@@ -20,7 +20,6 @@ Burger.create = function (burger) {
             burger_name: burger.name,
             devoured: burger.devoured
       }).then(results => {
-           //Get db generated ID
            burger.id = results.insertId;
           resolve(burger.id);
      }).catch(() => {
