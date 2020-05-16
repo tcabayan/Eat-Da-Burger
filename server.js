@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Override with POST having ?_method=DELETE
-app.use(methodOverride("_method"));
+app.use(methodOverride('_method'));
 
 // Set up handlebars view engine
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
