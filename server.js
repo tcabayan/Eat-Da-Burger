@@ -26,4 +26,6 @@ app.set("view engine", "handlebars");
 app.use('/', router);
 
 // Connect to the database and start express server
-app.listen(port);
+app.listen(PORT, function(){
+    console.log('Eat-Da-Burger app is listening on PORT: ' + PORT);
+});
